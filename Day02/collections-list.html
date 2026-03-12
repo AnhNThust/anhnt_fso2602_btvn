@@ -3,7 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Collections List</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="./css/collections-list.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="ellipse ellipse-1"></div>
+      <div class="ellipse ellipse-2"></div>
+      <div class="flex-column main-content">
+        <div class="flex-column title-group">
+          <h2 class="title">Popular Collections</h2>
+          <div class="flex-row tags-group">
+            <span class="flex-row poppins-16-500">Profile</span>
+            <span class="flex-row poppins-16-500">New York</span>
+            <span class="flex-row poppins-16-500">Relaxing</span>
+            <span class="flex-row poppins-16-500">Personn</span>
+            <span class="flex-row poppins-16-500">Fashion</span>
+          </div>
+        </div>
+        <div class="flex-row collections-group">
+          <!-- Collection-1 : People -->
+          <div class="flex-column collection">
+            <img class="primary-img" src="./imgs/people-1.png" alt="people-1" />
+            <div class="flex-row secondary-img">
+              <img src="./imgs/people-2.png" alt="people-2" />
+              <img src="./imgs/people-3.png" alt="people-3" />
+              <img src="./imgs/people-4.png" alt="people-4" />
+            </div>
+            <div class="flex-row collection-footer">
+              <span class="poppins-24-500">People</span>
+              <div class="flex-row">
+                <img src="./imgs/gallery-icon.svg" alt="gallery-icon" />
+                <span class="poppins-16-500">144</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection-2 : Nature -->
+          <div class="flex-column collection">
+            <img class="primary-img" src="./imgs/nature-1.png" alt="nature-1" />
+            <div class="flex-row secondary-img">
+              <img src="./imgs/nature-2.png" alt="nature-2" />
+              <img src="./imgs/nature-3.png" alt="nature-3" />
+              <img src="./imgs/nature-4.png" alt="nature-4" />
+            </div>
+            <div class="flex-row collection-footer">
+              <span class="poppins-24-500">Nature</span>
+              <div class="flex-row">
+                <img src="./imgs/gallery-icon.svg" alt="gallery-icon" />
+                <span class="poppins-16-500">7K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection-3 : History -->
+          <div class="flex-column collection">
+            <img
+              class="primary-img"
+              src="./imgs/history-1.png"
+              alt="history-1"
+            />
+            <div class="flex-row secondary-img">
+              <img src="./imgs/history-2.png" alt="history-2" />
+              <img src="./imgs/history-3.png" alt="history-3" />
+              <img src="./imgs/history-4.png" alt="history-4" />
+            </div>
+            <div class="flex-row collection-footer">
+              <span class="poppins-24-500">History</span>
+              <div class="flex-row">
+                <img src="./imgs/gallery-icon.svg" alt="gallery-icon" />
+                <span class="poppins-16-500">431</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
