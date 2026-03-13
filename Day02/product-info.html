@@ -4,268 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Info</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/product-info.css" />
+
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: "Poppins";
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/product-info.css" />
   </head>
   <body>
-    <div
-      class="Group-2"
-      style="
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 887px;
-        height: 661px;
-        top: 269px;
-        left: 356px;
-        border-radius: 15px;
-        box-shadow: 0px 24px 28px 9px #b3c1d954;
-      "
-    >
-      <div class="Frame-7" style="display: flex; gap: 32px">
-        <div class="image-1">
-          <img
-            src="./imgs/headphone.png"
-            alt="Tai nghe Razer"
-            style="width: 249px; height: 223px"
-          />
-        </div>
-        <div
-          class="Frame-6"
-          style="display: flex; flex-direction: column; gap: 32px"
-        >
-          <div
-            class="Group-1"
-            style="
-              position: relative;
-              width: 419px;
-              height: 111px;
-              font-weight: 600;
-            "
-          >
-            <span
-              style="
-                border-radius: 20px;
-                padding: 4px 8px;
-                background-color: #191847;
-                width: 96px;
-                height: 21px;
-                font-size: 14px;
-                line-height: 100%;
-                letter-spacing: 0%;
-                color: #fff;
-              "
-            >
-              Free shipping
-            </span>
-            <p
-              style="
-                display: flex;
-                align-items: center;
-                position: absolute;
-                top: 39px;
-                width: 419px;
-                height: 72px;
-                font-weight: 600;
-                font-size: 24px;
-                color: #191847;
-                line-height: 130%;
-                letter-spacing: 0%;
-              "
-            >
+    <div class="flex-row container">
+      <div class="flex-row product-group">
+        <img
+          src="./imgs/product.png"
+          alt="Razer Kraken Kitty Edt Gaming Headset Quartz"
+        />
+        <div class="flex-column product-info-group">
+          <div class="product-info-title">
+            <span class="poppins-14-600 badge">Free shipping</span>
+            <p class="poppins-24-600 product-name">
               Razer Kraken Kitty Edt Gaming Headset Quartz
             </p>
           </div>
-          <div class="Frame-4">
-            <span
-              style="
-                display: block;
-                width: 79px;
-                height: 21px;
-                font-family: Roboto;
-                font-weight: 400;
-                font-size: 18px;
-                color: #191847;
-                line-height: 100%;
-                letter-spacing: 0%;
-                text-decoration: line-through;
-              "
-            >
-              1 599,000
-            </span>
-            <span
-              style="
-                display: flex;
-                align-items: center;
-                width: 193px;
-                height: 72px;
-                font-weight: 700;
-                font-size: 48px;
-                color: #191847;
-                line-height: 100%;
-                letter-spacing: 0%;
-              "
-            >
-              799,000
-            </span>
-            <p
-              style="
-                width: 369px;
-                height: 21px;
-                opacity: 60%;
-                font-weight: 400;
-                font-size: 14px;
-                color: #191847;
-                line-height: 100%;
-                letter-spacing: 0%;
-              "
-            >
+          <div class="flex-column product-price-group">
+            <span class="old-price roboto-18-400"> 1 599,000 </span>
+            <span class="price poppins-48-700"> 799,000 </span>
+            <p class="exp-date poppins-14-400">
               The offer is valid until April 3 or as long as stock lasts!
             </p>
           </div>
-          <div
-            class="Frame-5"
-            style="
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              align-items: center;
-              gap: 10px;
-              border-radius: 8px;
-              padding: 16px;
-              background-color: #4788e9;
-              box-shadow: 0px 7px 0px 0px #1c57ee;
-            "
-          >
-            <span
-              style="
-                width: 102px;
-                height: 27px;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 100%;
-                letter-spacing: 0;
-                color: #fff;
-              "
-            >
+          <button class="btn-primary poppins-18-500">Add to cart</button>
+          <div class="product-quantity flex-row poppins-14-400">
+            <img src="./imgs/ellipse-1.svg" alt="ellipse-1" />
+            <span>50+ pcs. in stock.</span>
+          </div>
+          <div class="btn-secondary-group flex-row">
+            <button class="add-to-cart flex-row poppins-18-400">
+              <i class="fa-solid fa-scale-balanced"></i>
               Add to cart
-            </span>
-          </div>
-          <div
-            class="Frame-8"
-            style="display: flex; align-items: center; gap: 8px"
-          >
-            <img
-              src="./imgs/ellipse-1.svg"
-              alt="ellipse-1"
-              style="width: 13px; height: 13px"
-            />
-            <span
-              style="
-                display: flex;
-                align-items: center;
-                width: 119px;
-                height: 21px;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 100%;
-                letter-spacing: 0;
-              "
-              >50+ pcs. in stock.</span
-            >
-          </div>
-          <div
-            class="Frame-9"
-            style="display: flex; flex-direction: row; gap: 16px"
-          >
-            <div
-              class="Frame-5"
-              style="
-                width: 213px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                border: 2px solid #c9c9da;
-                border-radius: 8px;
-                padding: 16px;
-                gap: 10px;
-              "
-            >
-              <img
-                src="./imgs/icon-1.svg"
-                alt="icon-1"
-                style="width: 32px; height: 32px"
-              />
-              <p
-                style="
-                  display: flex;
-                  align-items: center;
-                  width: 101px;
-                  height: 27px;
-                  font-weight: 400;
-                  font-size: 18px;
-                  color: #191847;
-                  line-height: 100%;
-                  letter-spacing: 0%;
-                "
-              >
-                Add to cart
-              </p>
-            </div>
-            <div
-              class="Frame-8-in-9"
-              style="
-                width: 213px;
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                border: 2px solid #c9c9da;
-                border-radius: 8px;
-                padding: 16px;
-                gap: 10px;
-              "
-            >
-              <img
-                src="./imgs/icon-2.svg"
-                alt="icon-2"
-                style="width: 32px; height: 32px"
-              />
-              <p
-                style="
-                  display: flex;
-                  align-items: center;
-                  width: 131px;
-                  height: 27px;
-                  font-weight: 400;
-                  font-size: 18px;
-                  color: #191847;
-                  line-height: 100%;
-                  letter-spacing: 0%;
-                "
-              >
-                Add to wishlist
-              </p>
-            </div>
+            </button>
+            <button class="add-to-wishlist flex-row poppins-18-400">
+              <i class="fa-regular fa-heart"></i>
+              Add to wishlist
+            </button>
           </div>
         </div>
       </div>

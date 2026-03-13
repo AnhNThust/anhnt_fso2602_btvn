@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #EEF2F9;
+}
+
+.container {
+    width: 887px;
+    height: 661px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 28px 9px #B3C1D954;
+    padding: 82px;
+}
+
+.container .product-group {
+    gap: 32px;
+}
+
+.container .product-group>img {
+    width: 249px;
+    height: 223px;
+}
+
+.container .product-group .product-info-group {
+    gap: 32px;
+}
+
+.container .product-group .product-info-group .product-info-title {
+    width: 419px;
+    height: 111px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .product-group .product-info-group .product-info-title .badge {
+    border-radius: 20px;
+    padding: 4px 8px;
+    background-color: #191847;
+    position: absolute;
+
+    /* css font*/
+    color: #FFFFFF;
+}
+
+.container .product-group .product-info-group .product-info-title .product-name {
+    width: 419px;
+    height: 72px;
+    position: absolute;
+    top: 39px;
+
+    color: #191847;
+}
+
+.container .product-group .product-info-group .product-price-group .old-price {
+    width: 79px;
+    height: 21px;
+    text-decoration: line-through;
+}
+
+.container .product-group .product-info-group .product-price-group .price {
+    width: 193px;
+    height: 72px;
+    color: #191847;
+}
+
+.container .product-group .product-info-group .product-price-group .exp-date {
+    width: 369px;
+    height: 21px;
+    opacity: 60%;
+    color: #191847;
+}
+
+.container .product-group .product-info-group .btn-primary {
+    width: 442px;
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+    background-color: #4788E9;
+    box-shadow: 0px 7px 0px 0px #1C57EE;
+
+    color: #FFFFFF;
+}
+
+.container .product-group .product-info-group .product-quantity {
+    gap: 8px;
+}
+
+.container .product-group .product-info-group .product-quantity span {
+    width: 119px;
+    height: 21px;
+    color: #000000;
+}
+
+.container .product-group .product-info-group .btn-secondary-group {
+    width: 442px;
+    gap: 16px;
+}
+
+.container .product-group .product-info-group .btn-secondary-group button {
+    width: 213px;
+    border-radius: 8px;
+    border: 2px solid #C9C9DA;
+    padding: 16px;
+    gap: 10px;
+    justify-content: center;
+
+    /*font*/
+    color: #191847;
+}
+
+.container .product-group .product-info-group .btn-secondary-group button>i {
+    font-size: 30px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.poppins-14-400 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.poppins-18-400 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.poppins-18-500 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.poppins-14-600 {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.poppins-24-600 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.poppins-48-700 {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.roboto-18-400 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
