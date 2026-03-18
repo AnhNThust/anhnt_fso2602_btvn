@@ -15,20 +15,21 @@
 
       <div class="login-body">
         <div class="email-group">
-          <span class="email-label">Email</span>
-          <input type="text" id="email-input" placeholder="example@email.com" />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="example@email.com" required />
         </div>
 
         <div class="password-group">
           <div class="password-label-group">
-            <span class="password-label">Password</span>
+            <label for="password" class="password-label">Password</label>
             <a class="forgot-password" href="#">Forgot password?</a>
           </div>
 
-          <input type="password" id="password-input" placeholder="************" />
+          <input type="password" id="password" name="password" placeholder="************" required />
         </div>
 
-        <button class="btn-login"><span class="btn-name">Login</span></button>
+        <!-- <button class="btn-login"><span class="btn-name">Login</span></button> -->
+        <button class="btn-login">Login</button>
 
         <p class="login-footer-group">
           Don't have account?
