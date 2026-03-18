@@ -24,8 +24,6 @@ html {
 }
 
 .login-form .login {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     position: absolute;
     top: 33px;
@@ -40,19 +38,11 @@ html {
 }
 
 .login-form .login .login-body {
-    display: flex;
-    flex-direction: column;
     gap: 24px;
     width: 320px;
     padding: 24px;
     border-radius: 8px;
     background-color: #fff;
-}
-
-.login-form .login .login-body .email-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .login-form .login .login-body .email-group label {
@@ -66,21 +56,12 @@ html {
     background-color: #F9F9F9CC;
 }
 
-.login-form .login .login-body .password-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .login-form .login .login-body .password-group .password-label-group {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .login-form .login .login-body .password-group .password-label-group label {
     width: 62px;
-    height: 16px;
     color: #111;
 }
 
@@ -100,8 +81,6 @@ html {
 }
 
 .login-form .login .login-body .btn-login {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -111,11 +90,10 @@ html {
 
     font-weight: 700;
     font-size: 16px;
-    color: #ffffff;
+    color: #fff;
 }
 
 .login-form .login .login-body .login-footer-group {
-    display: flex;
     justify-content: center;
     width: 272px;
 
@@ -126,4 +104,18 @@ html {
     color: #007aff;
     text-decoration: none;
     margin-left: 4px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-8 {
+    gap: 8px;
 }

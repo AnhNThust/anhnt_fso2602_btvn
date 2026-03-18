@@ -10,17 +10,17 @@
 
 <body>
   <form action="post" class="login-form">
-    <div class="login">
+    <div class="login flex-column">
       <h1 class="login-title">Login</h1>
 
-      <div class="login-body">
-        <div class="email-group">
+      <div class="login-body flex-column">
+        <div class="email-group flex-column gap-8">
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="example@email.com" required />
         </div>
 
-        <div class="password-group">
-          <div class="password-label-group">
+        <div class="password-group flex-column gap-8">
+          <div class="password-label-group flex-row">
             <label for="password">Password</label>
             <a href="#">Forgot password?</a>
           </div>
@@ -28,9 +28,9 @@
           <input type="password" id="password" name="password" placeholder="************" required />
         </div>
 
-        <button class="btn-login">Login</button>
+        <button class="btn-login flex-row">Login</button>
 
-        <p class="login-footer-group">
+        <p class="login-footer-group flex-row">
           Don't have account?
           <a class="create-new-account" href="">Create new account</a>
         </p>
