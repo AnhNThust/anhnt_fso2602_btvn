@@ -1,47 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/login-form.css" />
-  </head>
-  <body>
-    <div class="login-form">
-      <div class="login">
-        <h1 class="login-title">Login</h1>
 
-        <div class="login-body">
-          <div class="email-group">
-            <span class="email-label">Email</span>
-            <input
-              type="text"
-              id="email-input"
-              placeholder="example@email.com"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/login-form.css" />
+</head>
 
-          <div class="password-group">
-            <div class="password-label-group">
-              <span class="password-label">Password</span>
-              <a class="forgot-password" href="#">Forgot password?</a>
-            </div>
+<body>
+  <form action="post" class="login-form">
+    <div class="login">
+      <h1 class="login-title">Login</h1>
 
-            <input
-              type="password"
-              id="password-input"
-              placeholder="************"
-            />
-          </div>
-
-          <button class="btn-login"><span class="btn-name">Login</span></button>
-
-          <p class="login-footer-group">
-            Don't have account?
-            <a class="create-new-account" href="">Create new account</a>
-          </p>
+      <div class="login-body">
+        <div class="email-group">
+          <span class="email-label">Email</span>
+          <input type="text" id="email-input" placeholder="example@email.com" />
         </div>
+
+        <div class="password-group">
+          <div class="password-label-group">
+            <span class="password-label">Password</span>
+            <a class="forgot-password" href="#">Forgot password?</a>
+          </div>
+
+          <input type="password" id="password-input" placeholder="************" />
+        </div>
+
+        <button class="btn-login"><span class="btn-name">Login</span></button>
+
+        <p class="login-footer-group">
+          Don't have account?
+          <a class="create-new-account" href="">Create new account</a>
+        </p>
       </div>
     </div>
-  </body>
+  </form>
+</body>
+
 </html>
