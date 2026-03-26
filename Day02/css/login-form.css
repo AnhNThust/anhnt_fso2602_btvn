@@ -80,6 +80,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--text-link-color);
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
