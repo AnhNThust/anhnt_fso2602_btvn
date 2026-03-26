@@ -51,7 +51,7 @@ h1,
 }
 
 .container {
-    margin: 234px auto;
+    margin: 50px auto;
     background-color: var(--filter-text-selected-color);
 
     width: 100%;
