@@ -1,42 +1,138 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Users List</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header-group">
-        <h1 class="title">Users</h1>
-        <div class="filter-group">
-          <div class="search"></div>
-          <div class="filter">
-            <span>Reputation</span>
-            <span>New users</span>
-            <span>Voters</span>
-            <span>Editors</span>
-            <span>Moderators</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Users List</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <link rel="stylesheet" href="../common/reset.css">
+  <link rel="stylesheet" href="./css/user-list.css">
+</head>
+
+<body>
+  <div class="container flex-col">
+    <div class="header-group flex-col">
+      <h1 class="title">Users</h1>
+
+      <div class="filter-group flex-row-bw">
+        <div class="search">
+          <img src="./imgs/search.svg" alt="search-icon">
+          <input type="search" name="search" id="search" placeholder="Search users">
         </div>
-      </div>
-      <div class="users-group">
-        <div class="above-group">
-          <div class="user-1">
-            <img src="" alt="" />
-            <div class="user-info"></div>
-          </div>
-          <div class="user-2">
-            <img src="" alt="" />
-            <div class="user-info"></div>
-          </div>
-          <div class="user-3">
-            <img src="" alt="" />
-            <div class="user-info"></div>
-          </div>
+
+        <div class="filter">
+          <button>Reputation</button>
+          <button>New users</button>
+          <button>Voters</button>
+          <button>Editors</button>
+          <button>Moderators</button>
         </div>
-        <div class="under-group"></div>
       </div>
     </div>
-  </body>
+
+    <div class="users-group">
+      <div class="user">
+        <img src="./imgs/user-01.png" alt="user-01">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Lelah Nichols</p>
+            <p class="address">Troy, MI</p>
+          </div>
+
+          <div class="hobbies">
+            <span>clothes</span>
+            <span>stem</span>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="./imgs/user-02.png" alt="user-02">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Jesus Weiss</p>
+            <p class="address">Fort Worth, TX</p>
+          </div>
+
+          <div class="hobbies">
+            <span>headset</span>
+            <span>gadget</span>
+            <span>speed</span>
+            <span>winter</span>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="./imgs/user-03.png" alt="user-03">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Annie Rice</p>
+            <p class="address">Austin, TX</p>
+          </div>
+
+          <div class="hobbies">
+            <span>road</span>
+            <span>mountain</span>
+            <span>trip</span>
+            <span>earth</span>
+            <span>nature</span>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="./imgs/user-04.png" alt="user-04">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Robert Brower</p>
+            <p class="address">Cincinnati, OH</p>
+          </div>
+
+          <div class="hobbies">
+            <span>Maintenance</span>
+            <span>gears</span>
+            <span>frames</span>
+            <span>repair</span>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="./imgs/user-05.png" alt="user-05">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Amy Campbell</p>
+            <p class="address">Warrior, AL</p>
+          </div>
+
+          <div class="hobbies">
+            <span>music</span>
+            <span>disks</span>
+          </div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="./imgs/user-06.png" alt="user-06">
+
+        <div class="user-info">
+          <div class="contacts">
+            <p class="user-fullname">Anthony S.Morin</p>
+            <p class="address">Lyndhurst, NJ</p>
+          </div>
+
+          <div class="hobbies">
+            <span>vintage</span>
+            <span>electric</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
