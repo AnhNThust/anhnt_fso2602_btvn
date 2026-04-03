@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1F1D2A;
+    --secondary-color: #9B948E;
+    --third-color: #96C67F;
+
+    --ff-default: "Poppins", sans-serif;
+
+    --fw-light: 300;
+    --fw-default: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+
+    --main-img-size: 500px;
+    --hero-play-btn-size: 80px;
+    --rating-i-size: 24px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--primary-color);
+    /* màu bạn muốn */
+    text-decoration: none;
+    /* tùy chọn: bỏ gạch chân */
+    border-radius: 6px;
+}
+
+body {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    max-width: 1512px;
+    width: 100%;
+    height: 1708px;
+    padding: 40px 120px 100px;
+
+    background: linear-gradient(292.92deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
+
+    font-family: var(--ff-default);
+    font-weight: var(--fw-default);
+    color: var(--primary-color);
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        height: 48px;
+        margin-bottom: 100px;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+header {
+    .header-logo {
+        font-size: 32px;
+        font-weight: var(--fw-medium);
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 50px;
+    }
+
+    .signin-btn {
+        width: 110px;
+        height: 45px;
+        border: 1px solid var(--primary-color);
+        font-weight: var(--fw-medium);
+    }
+}
+
+.nav-list {
+    .nav-link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            position: absolute;
+            top: 130%;
+            width: 110%;
+            height: 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+    }
+
+    >.nav-item:hover {
+        .nav-link {
+            font-weight: var(--fw-medium);
+        }
+
+        span {
+            border-color: var(--primary-color);
+        }
+    }
+}
+
+main {
+    .hero {
+        display: flex;
+        gap: 81px;
+
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        .brands-list {
+            display: inherit;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+    }
+
+    .instructors {
+        display: inherit;
+        flex-direction: inherit;
+        gap: 70px;
+    }
+}
+
+.hero {
+    .hero-content {
+        margin: 62px 0;
+
+        h1 {
+            font-size: 55px;
+            font-weight: var(--fw-semi-bold);
+        }
+
+        .hero-description {
+            margin: 30px 0 50px 0;
+            color: var(--secondary-color);
+        }
+
+        .hero-cta {
+            width: 170px;
+            height: 70px;
+            background-color: var(--third-color);
+            font-weight: var(--fw-medium);
+            font-size: 20px;
+        }
+    }
+}
+
+.hero-media {
+    position: relative;
+    max-width: var(--main-img-size);
+    max-height: var(--main-img-size);
+
+    .hero-image-wrapper {
+        width: var(--main-img-size);
+        height: var(--main-img-size);
+        border-radius: 50%;
+        /* * phan anh vuot ra ngoai */
+        overflow: hidden;
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .hero-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9499B7;
+
+        &>img {
+            transform: rotate(-120deg);
+        }
+    }
+
+    .hero-card {
+        position: absolute;
+        top: 401px;
+        left: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 180px;
+        height: 130px;
+        padding: 20px;
+        border-radius: 20px;
+
+        background-color: #fff;
+
+        .card-name,
+        .card-role {
+            display: inline-block;
+        }
+
+        .card-name {
+            height: 24px;
+            font-weight: var(--fw-medium);
+        }
+
+        .card-role {
+            height: 21px;
+            font-size: 14px;
+            font-weight: var(--fw-light);
+            color: var(--secondary-color);
+        }
+
+        >.rating {
+            display: flex;
+            gap: 2px;
+
+            >.star-img-wrapper {
+                display: inherit;
+                justify-content: center;
+                align-items: center;
+
+                width: var(--rating-i-size);
+                height: var(--rating-i-size);
+            }
+        }
+    }
+}
+
+.brands {
+    .brands-label {
+        height: 24px;
+        font-weight: var(--fw-medium);
+    }
+}
+
+.instructors-header {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+
+    .instructors-subtitle {
+        height: 27px;
+        font-weight: var(--fw-medium);
+        font-size: 18px;
+    }
+
+    .instructors-title {
+        height: 48px;
+        font-weight: var(--fw-semi-bold);
+        font-size: 32px;
+        align-content: center;
+    }
+}
+
+.instructors-list {
+    display: inherit;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .instructor-card {
+        width: 295px;
+
+        .card-img-wrapper {
+            width: 295px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+
+            .card-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            >.card-img-1 {
+                transform: scale(1.36);
+                object-position: top -26px left 50%;
+            }
+
+            >.card-img-4 {
+                transform: scale(1.05);
+                object-position: top 0px left 14%;
+            }
+
+        }
+
+        .card-body {
+            padding: 20px;
+            height: 100px;
+            border-radius: 0 0 20px 20px;
+            background-color: #fff;
+        }
+    }
+}
+
+.card-body {
+    .card-name {
+        height: 30px;
+        font-weight: var(--fw-medium);
+        font-size: 20px;
+        align-content: center;
+    }
+
+    .card-description {
+        height: 24px;
+        color: var(--secondary-color);
+    }
+}
+
+span,
+p {
+    align-content: center;
+}
