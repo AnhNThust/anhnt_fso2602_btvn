@@ -38,6 +38,8 @@ a:active {
 }
 
 body {
+    position: relative;
+
     margin-left: 50%;
     transform: translateX(-50%);
     max-width: 1512px;
@@ -51,7 +53,54 @@ body {
     font-weight: var(--fw-default);
     color: var(--primary-color);
 
-    header {
+    >.back-ground {
+        position: absolute;
+        top: -284px;
+        left: -230px;
+        z-index: -1;
+
+        width: 1129.78px;
+        height: 1169.81px;
+        transform: rotate(8.6deg);
+
+        >.bg-img-wrapper {
+            position: absolute;
+            width: 943.32px;
+            height: 1029.96px;
+            /* background-color: rgba(255, 0, 0, 0.119); */
+
+            >img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        >.bg-img-wrapper:nth-child(2) {
+            top: calc(25%);
+            left: calc(25%);
+            transform: translate(-25%, -25%);
+        }
+
+        >.bg-img-wrapper:nth-child(3) {
+            top: calc(50%);
+            left: calc(50%);
+            transform: translate(-50%, -50%);
+        }
+
+        >.bg-img-wrapper:nth-child(4) {
+            top: calc(75%);
+            left: calc(75%);
+            transform: translate(-75%, -75%);
+        }
+
+        >.bg-img-wrapper:nth-child(5) {
+            top: calc(100%);
+            left: calc(100%);
+            transform: translate(-100%, -100%);
+        }
+    }
+
+    >header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -62,7 +111,7 @@ body {
 
     }
 
-    main {
+    >main {
         display: flex;
         flex-direction: column;
         gap: 100px;
@@ -193,11 +242,13 @@ main {
         top: 50%;
         left: 100%;
         transform: translate(-50%, -50%);
+
         width: 80px;
         height: 80px;
         border-radius: 50%;
         border: none;
         background-color: #9499B7;
+        cursor: pointer;
 
         &>img {
             transform: rotate(-120deg);
@@ -273,10 +324,27 @@ main {
     }
 
     .instructors-title {
+        display: flex;
+        align-items: center;
+
         height: 48px;
         font-weight: var(--fw-semi-bold);
         font-size: 32px;
         align-content: center;
+
+        >a {
+            position: relative;
+            margin-left: 6px;
+        }
+
+        >a::after {
+            position: absolute;
+            top: 24px;
+            content: "";
+            border: 3px solid var(--third-color);
+            width: 110px;
+            z-index: -1;
+        }
     }
 }
 
