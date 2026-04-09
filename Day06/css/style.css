@@ -1,0 +1,268 @@
+@font-face {
+	font-family: 'BeaufortforLOLRegular';
+	src: url('../assets/fonts/BeaufortForLoL-OTF/BeaufortforLOL-Regular.otf');
+}
+
+@font-face {
+	font-family: 'BeaufortforLOLBold';
+	src: url('../assets/fonts/BeaufortForLoL-OTF/BeaufortforLOL-Heavy.otf');
+}
+
+:root {
+	--primary-ff: 'BeaufortforLOLRegular';
+	--secondary-ff: 'Montserrat', sans-serif;
+	--primary-ff-bold: 'BeaufortforLOLBold';
+
+	--fw-bold: 700;
+	--fw-regular: 400;
+
+	--primary-fs: 1.25rem;
+	--secondary-fs: 1rem;
+
+	--body-pd: 0.75rem;
+	--body-pd-sm-sc: 1.5rem;
+
+	--primary-color: #0e4c67;
+	--primary-color-hover: #358db3;
+	--secondary-color: #ffa800;
+	--text-color: #fff;
+}
+
+a {
+	text-transform: capitalize;
+	color: #000;
+}
+
+body {
+	text-align: center;
+	font-family: var(--primary-ff);
+	font-weight: var(--fw-bold);
+	font-size: var(--primary-fs);
+
+	.banner > img {
+		width: 100%;
+	}
+
+	main {
+		padding: 0 var(--body-pd);
+	}
+}
+
+.header {
+	.game-name {
+		display: block;
+		max-width: 240px;
+		width: 100%;
+		height: 106px;
+		margin: 2rem auto;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	nav > .menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+
+		a {
+			position: relative;
+			display: block;
+			height: 25px;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+				width: 0;
+				border: 2px solid transparent;
+				border-radius: 0.625rem;
+				transition: all ease-in-out 0.3s;
+			}
+
+			&:hover::after {
+				width: 110%;
+				border-color: var(--primary-color);
+			}
+		}
+	}
+}
+
+.figures {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 2rem;
+	margin: 4rem 0;
+
+	.figure {
+		a {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			transition: all ease-in-out 0.3s;
+
+			img {
+				width: 100%;
+				transition: inherit;
+			}
+
+			h2 {
+				align-content: center;
+				max-width: 100%;
+				width: 100%;
+				padding: 1.75rem 0;
+				background-color: var(--primary-color);
+
+				color: var(--text-color);
+				text-transform: uppercase;
+				transition: inherit;
+			}
+
+			&:hover {
+				transform: scale(110%);
+
+				img {
+					border-radius: 10px 10px 0 0;
+				}
+
+				h2 {
+					border-radius: 0 0 10px 10px;
+					background-color: var(--primary-color-hover);
+				}
+			}
+		}
+	}
+}
+
+main {
+	& > iframe {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1.5rem;
+	margin-top: 4.625rem;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+
+	.footer-left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 236px;
+		width: 100%;
+		height: 25px;
+	}
+
+	.footer-right {
+		display: flex;
+		flex-grow: 1;
+		justify-content: flex-end;
+		gap: 1.5rem;
+		width: 100%;
+
+		& > input {
+			max-width: 280px;
+			width: 100%;
+			height: 52px;
+			padding: 0 1.5rem;
+			border: 2px solid var(--secondary-color);
+			border-radius: 0.25rem;
+			background-color: var(--primary-color);
+			outline: none;
+
+			font-family: var(--secondary-ff);
+			font-weight: var(--fw-regular);
+			color: var(--text-color);
+
+			&::placeholder {
+				color: var(--text-color);
+			}
+		}
+
+		& > a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			max-width: 128px;
+			width: 100%;
+			/* padding: 1rem; */
+			padding: 1rem 0.9375rem;
+			border-radius: 0.3125rem;
+
+			font-family: var(--primary-ff-bold);
+			font-size: var(--secondary-fs);
+			color: var(--text-color);
+			background-color: var(--secondary-color);
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.figures {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu {
+		a {
+			font-size: 1rem;
+		}
+	}
+
+	.figures {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	footer {
+		flex-direction: column-reverse;
+		gap: 32px;
+
+		.footer-right {
+			justify-content: center;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	body {
+		main {
+			padding: 0 var(--body-pd-sm-sc);
+
+			.header {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.menu {
+				flex-direction: column;
+			}
+
+			.figures {
+				grid-template-columns: 1fr;
+				margin: 4rem 0;
+			}
+		}
+
+		footer {
+			.footer-right {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}
