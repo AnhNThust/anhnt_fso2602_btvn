@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 9</title>
+</head>
+
+<body>
+  <h2>Bài 9</h2>
+
+  <script>
+    function taxiBill(km) {
+      if (typeof km !== "number" || km <= 0) {
+        console.log("Số km không hợp lệ");
+        return;
+      }
+
+      let bill = 10000;
+      km = parseInt(km);
+      if (km > 30) {
+        bill = bill + (km - 30) * 7000;
+        km = 30;
+      }
+
+      bill = bill + (km - 1) * 8000;
+
+      console.log("Số tiền cần trả: %dđ", bill);
+    }
+
+    let km = +window.prompt("Nhập số km:");
+    taxiBill(km);
+
+    // taxiBill(0.1); // Output: Số tiền cần trả: 10000đ
+    // taxiBill(1); // Output: Số tiền cần trả: 10000đ
+    // taxiBill(10); // Output: Số tiền cần trả: 82000đ
+    // taxiBill(-5); // Output: Số km không hợp lệ
+    // taxiBill("abc"); // Output: Số km không hợp lệ
+    // taxiBill(8.9);
+    // taxiBill(90);
+  </script>
+</body>
+
+</html>

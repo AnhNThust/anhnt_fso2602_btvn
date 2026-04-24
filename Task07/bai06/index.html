@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 6</title>
+</head>
+
+<body>
+  <h2>Bài 6</h2>
+
+  <script>
+    function printPrimeNumber(n) {
+      if (isNaN(n) || n <= 2) {
+        console.log("n không hợp lệ");
+        return;
+      }
+
+      let isDivide = false;
+      for (let i = 2; i < n; i++) {
+        if (i == 2) {
+          console.log("%d ", i);
+          continue;
+        }
+
+        for (let j = 2; j < i; j++) {
+          if (i % j === 0) {
+            isDivide = true;
+            break;
+          }
+
+          isDivide = false;
+        }
+
+        // isDivide = false -> !isDivide = true
+        if (!isDivide) {
+          console.log("%d ", i);
+        }
+      }
+    }
+
+    let n = +window.prompt("Nhap n:");
+    printPrimeNumber(n);
+    // printPrimeNumber(30);
+  </script>
+</body>
+
+</html>

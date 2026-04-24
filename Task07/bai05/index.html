@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 5</title>
+</head>
+
+<body>
+  <h2>Bài 5</h2>
+
+  <script>
+    function printSquareNumber(n) {
+      if (isNaN(n) || n <= 2) {
+        console.log("n không hợp lệ");
+        return;
+      }
+
+      for (let i = 2; i <= n; i++) {
+        for (let j = 1; j < i; j++) {
+          if (j * j != i) continue;
+          console.log("%d ", i);
+          break;
+        }
+      }
+    }
+
+    let n = +window.prompt("Nhập n: ");
+    printSquareNumber(n);
+    // printSquareNumber(200);
+  </script>
+</body>
+
+</html>

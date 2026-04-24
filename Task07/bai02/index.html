@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 2</title>
+</head>
+
+<body>
+  <h2>Bài 2</h2>
+
+  <script>
+    function swapNumber(a, b) {
+      if (isNaN(a) || isNaN(b)) {
+        console.log("a hoặc b không hợp lệ");
+        return;
+      }
+
+      a = a + b;
+      b = a - b;
+      a = a - b;
+      console.log("%d %d", a, b);
+    }
+
+    let a = +window.prompt("Nhập a:");
+    let b = +window.prompt("Nhập b:");
+    swapNumber(a, b);
+
+    // swapNumber(3, 5);
+    // swapNumber(3, "a");
+    // swapNumber("c", 5);
+    // swapNumber(2, -6);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1</title>
+</head>
+
+<body>
+  <script>
+    function calcBMI(weight, height) {
+      let res = 10000 * weight / (height * height);
+      // console.log(res);
+      if (res < 18.5) {
+        console.log("BMI = %f Thiếu cân", res);
+      } else if (res < 23) {
+        console.log("BMI = %f Bình thường", res);
+      } else if (res < 25) {
+        console.log("BMI = %f Thừa cân", res);
+      } else {
+        console.log("BMI = %f Béo phì", res);
+      }
+    }
+
+    let weight = window.prompt("xin mời nhập cân nặng (kg):");
+    let height = window.prompt("xin mời nhập chiều cao (cm):");
+    calcBMI(weight, height);
+  </script>
+</body>
+
+</html>

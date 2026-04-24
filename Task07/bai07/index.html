@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 7</title>
+</head>
+
+<body>
+  <h2>Bài 7</h2>
+
+  <script>
+    function findMaxNumber(a, b, c) {
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        console.log("a hoặc b hoặc c không hợp lệ");
+        return;
+      }
+
+      let max = a;
+      if (max < b) {
+        max = b;
+      }
+
+      if (max < c) {
+        max = c;
+      }
+
+      console.log(max);
+    }
+
+    function findMaxNumberBySort(a, b, c) {
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        console.log("a hoặc b hoặc c không hợp lệ");
+        return;
+      }
+
+      if (a > b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
+      }
+
+      if (b > c) {
+        // a < b > c
+        console.log(b);
+      } else {
+        // a < b < c
+        console.log(c);
+      }
+    }
+
+    let a = +window.prompt("Nhập a:");
+    let b = +window.prompt("Nhập b:");
+    let c = +window.prompt("Nhập c:");
+    findMaxNumber(a, b, c);
+    findMaxNumberBySort(a, b, c);
+    // findMaxNumber(15, 100, 99);
+    // findMaxNumberBySort(9, 7, 10);
+  </script>
+</body>
+
+</html>

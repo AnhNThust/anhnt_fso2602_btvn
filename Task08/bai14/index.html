@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 14</title>
+</head>
+
+<body>
+  <h2>Bài 14</h2>
+
+  <script>
+    function printChristmasTree(n, character) {
+      if (isNaN(n) || n < 2) {
+        console.log("n không hợp lệ");
+      }
+
+      let tree = "";
+      for (let i = 0; i < n; i++) {
+        tree += ' '.repeat(n - i);
+        tree += character.repeat((i + 1) * 2 - 1);
+
+        // for (let j = 0; j <= n + i; j++) {
+        //   if (j < n - i) {
+        //     tree += ' ';
+        //   } else {
+        //     tree += character;
+        //   }
+        // }
+        tree += '\n';
+      }
+      tree += (' '.repeat(n) + character);
+
+      console.log(tree);
+    }
+
+    let n = +window.prompt("Nhập số dòng:");
+    let ch = window.prompt("Nhập ký tự hiển thị:");
+    printChristmasTree(n, ch);
+  </script>
+</body>
+
+</html>

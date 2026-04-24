@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 12</title>
+</head>
+
+<body>
+  <h2>Bài 12</h2>
+
+  <script>
+    function printMultiplicationTable() {
+      let mulTable = "";
+      for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+          mulTable = `${mulTable} ${i} x ${j} = ${i * j}\n`;
+        }
+        mulTable += '\n';
+      }
+
+      console.log(mulTable);
+    }
+
+    // bảng cửu chương - n chương
+    // function printMultiplicationTableN(n) {
+    //   if (isNaN(n)||n<=0){
+    //     console.log("n không hợp lệ");
+    //     return;
+    //   }
+
+    //   let mulTable = "";
+    //   for (let i = 1; i <= n; i++) {
+    //     for (let j = 1; j <= n; j++) {
+    //       mulTable = `${mulTable} ${i} x ${j} = ${i * j}\n`;
+    //     }
+    //     mulTable += '\n';
+    //   }
+
+    //   console.log(mulTable);
+    // }
+    // let n = +window.prompt("Nhập số chương muốn xem:");
+    // printMultiplicationTableN(n);
+
+    printMultiplicationTable();
+  </script>
+</body>
+
+</html>

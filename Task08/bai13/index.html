@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 13</title>
+</head>
+
+<body>
+  <h2>Bài 13</h2>
+
+  <script>
+    // Input:
+    function printIsoscelesTriangle(n, character) {
+      if (isNaN(n) || n < 2) {
+        console.log("n không hợp lệ");
+      }
+
+      // Xử lý và in ra kết quả
+      // i sẽ chạy theo từng dòng
+      // j sẽ in các ngôi sao    
+      // vị trí thứ n sẽ là đỉnh của tam giác  
+      // i bắt đầu từ 0, j bắt đầu in character từ n-i => n+i
+      let triangle = "";
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j <= n + i; j++) {
+          if (j < n - i) {
+            triangle += ' ';
+          } else {
+            triangle += character;
+          }
+        }
+        triangle += '\n';
+      }
+      console.log(triangle);
+    }
+
+    let n = +window.prompt("Nhập số dòng:");
+    let ch = window.prompt("Nhập ký tự hiển thị:");
+    printIsoscelesTriangle(n, ch);
+    // Output:
+    // printIsoscelesTriangle(5, "*");
+    // printIsoscelesTriangle(6, "x");
+    //     *
+    //    ***
+    //   *****
+    //  *******
+    // *********
+  </script>
+</body>
+
+</html>

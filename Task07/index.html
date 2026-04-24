@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript 1 - 11</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#fff',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer base {
+    }
+
+    @layer components {
+    }
+
+    @layer utilities {
+    }
+  </style>
+</head>
+
+<body class="">
+  <pre>
+    <code>
+      function calcBMI(weight, height) {
+        let res = (10000 * weight / (height * height)).toFixed(2);
+        // console.log(res);
+        if (res < 18.5) {
+          console.log("BMI = %f Thiếu cân", res);
+        } else if (res < 23) {
+          console.log("BMI = %f Bình thường", res);
+        } else if (res < 25) {
+          console.log("BMI = %f Thừa cân", res);
+        } else {
+          console.log("BMI = %f Béo phì", res);
+        }
+      }
+
+      let weight = window.prompt("xin mời nhập cân nặng (kg):");
+      let height = window.prompt("xin mời nhập chiều cao (cm):");
+      calcBMI(weight, height);
+    </code>
+  </pre>
+</body>
+
+</html>
