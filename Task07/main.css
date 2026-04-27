@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply bg-[#0D131E];
+  }
+
+  h2 {
+    @apply text-red-700;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700;
+  }
+}
+
+@layer utilities {
+  .filter-none {
+    filter: none;
+  }
+
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}

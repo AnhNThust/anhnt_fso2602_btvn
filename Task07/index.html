@@ -5,53 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>javascript 1 - 11</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#fff',
-          }
-        }
-      }
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <style type="text/tailwindcss">
-    @layer base {
-    }
-
-    @layer components {
-    }
-
-    @layer utilities {
-    }
-  </style>
-</head>
-
-<body class="">
-  <pre>
-    <code>
-      function calcBMI(weight, height) {
-        let res = (10000 * weight / (height * height)).toFixed(2);
-        // console.log(res);
-        if (res < 18.5) {
-          console.log("BMI = %f Thiếu cân", res);
-        } else if (res < 23) {
-          console.log("BMI = %f Bình thường", res);
-        } else if (res < 25) {
-          console.log("BMI = %f Thừa cân", res);
-        } else {
-          console.log("BMI = %f Béo phì", res);
-        }
-      }
-
-      let weight = window.prompt("xin mời nhập cân nặng (kg):");
-      let height = window.prompt("xin mời nhập chiều cao (cm):");
-      calcBMI(weight, height);
-    </code>
-  </pre>
+<body class="flex flex-col items-center mt-10">
+  <h1 class="text-4xl">Bài tập javascript - Toán tử, câu điều kiện</h1>
+  <!-- <a href="./bai01/index.html"></a> -->
+  <section class="pt-4 flex gap-8 [&>*]:hover:text-red-600">
+    <a href="./bai01/index.html">Bài 01</a>
+    <a href="./bai02/index.html">Bài 02</a>
+    <a href="./bai03/index.html">Bài 03</a>
+    <a href="./bai04/index.html">Bài 04</a>
+    <a href="./bai05/index.html">Bài 05</a>
+    <a href="./bai06/index.html">Bài 06</a>
+    <a href="./bai07/index.html">Bài 07</a>
+    <a href="./bai08/index.html">Bài 08</a>
+    <a href="./bai09/index.html">Bài 09</a>
+    <a href="./bai10/index.html">Bài 10</a>
+    <a href="./bai11/index.html">Bài 11</a>
+  </section>
 </body>
 
 </html>
